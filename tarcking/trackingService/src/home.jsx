@@ -48,7 +48,7 @@ const Home = () => {
       return;
     }
 
-    if (tipe === 'LCL' && (!formData.no_hbl_awb || !formData.tgl_hbl_awb || !formData.nocontainer)) {
+    if (tipe === 'LCL' && (!formData.no_hbl_awb || !formData.nocontainer)) {
       Swal.fire({
         icon: 'error',
         text: 'Informasi anda belum lengkap',
@@ -209,21 +209,6 @@ const Home = () => {
                     type="text"
                     value={formData.no_hbl_awb}
                     onChange={(e) => setFormData({ ...formData, no_hbl_awb: e.target.value })}
-                    required
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  />
-                </div>
-
-                <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-                  Tgl HBL Awb
-                </label>
-                <div className="mt-2">
-                  <input
-                    id="tgl_hbl_awb"
-                    name="tgl_hbl_awb"
-                    type="date"
-                    value={formData.tgl_hbl_awb}
-                    onChange={(e) => setFormData({ ...formData, tgl_hbl_awb: e.target.value })}
                     required
                     className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                   />

@@ -110,7 +110,7 @@ console.log(photos);
                                 <i className="fa fa-search"></i>
                                 <span className="ml-2">Print</span>
                             </button>
-                            <button onClick={() => (window.location.href = "/")} className="w-full mt-4 flex items-center justify-center bg-yellow-600 text-white p-2 rounded-md">
+                            <button onClick={() => (window.location.href = "/customer-tracking/")} className="w-full mt-4 flex items-center justify-center bg-yellow-600 text-white p-2 rounded-md">
                                 Back
                             </button>
                         </div>
